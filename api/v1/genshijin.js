@@ -1,5 +1,8 @@
+var genshijin = require('../../lib/genshijin');
+
 module.exports = {
   post : function(req, res) {
-    res.send(req.body.status)
+    genshijin(req.body.status);
+    res.send();
   }
 }
