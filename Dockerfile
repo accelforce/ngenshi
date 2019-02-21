@@ -1,5 +1,6 @@
 FROM node:8.15.0-alpine
 
+ARG NODE_ENV=development
 ENV ROOT /src
 WORKDIR ${ROOT}
 
