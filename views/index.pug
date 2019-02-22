@@ -2,4 +2,46 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p ゲンシジン Notestock レンケイ トゥート スル
+
+  h2 アソビカタ
+  p 
+    a(href="https://notestock.osa-p.net") Notestock
+    |  webhook ツカウ
+  h3 ヒツヨウ モノ
+  ul
+    li Mastodon アカウント(Notestock セッテイ ヒッス)
+    li アクセストークン
+  p 
+    | セッテイ 
+    a(href="https://notestock.osa-p.net/webhook.html") ココ
+    |  ウメル
+    br
+    b セイキ ヒョウゲン
+    br
+    | .*
+    br
+    b webhook URL
+    br
+    | https://genshijin.accelf.net/api/v1/genshijin?domain=[インスタンス ドメイン]&access_token=[アクセストークン]&status=$0
+    br
+    b リクエスト メソッド
+    br
+    | POST
+    br
+    b ソウシン body
+    br
+    | (クウラン)
+  h2 リンク
+    h3 ソースコード
+    p
+      | デプロイ ホウホウ ノッテル
+      | バグ ホウコク プルリク カンゲイ
+      br
+      a(href="https://github.com/accelforce/ngenshi") accelforce/ngenshi(GitHub)
+    h3 モトネタ
+    a(href="https://qiita.com/Harusugi/items/f499e8707b36d0f570c4") オレ プログラム ウゴカス オマエ ゲンシジン ナル
+    h3 カイハツシャ
+    a(href="https://odakyu.app/@ars42525") @ars42525@odakyu.app
+    br
+    a(href="https://odakyu.app/@genshijin") @genshijin@odakyu.app (ゲンシジン バージョン)
