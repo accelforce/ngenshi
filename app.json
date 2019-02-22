@@ -1,3 +1,7 @@
 {
+  "name" : "ngenshi",
+  "description" : "ゲンシジン ジドウ トゥート スル",
+  "website" : "https://genshijin.accelf.net/",
+  "repository" : "https://github.com/accelforce/ngenshi",
   "stack" : "container"
 }
