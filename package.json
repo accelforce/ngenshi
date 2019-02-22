@@ -25,7 +25,8 @@
     "kuromoji": "^0.1.2",
     "morgan": "~1.9.0",
     "pug": "^2.0.3",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "striptags": "^3.1.1"
   },
   "engines": {
     "node": "8.15.0"
