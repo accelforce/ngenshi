@@ -1,6 +1,7 @@
 .git/
 node_modules/
 .gitignore
+app.json
 docker-compose.yml
 Dockerfile
 heroku.yml
