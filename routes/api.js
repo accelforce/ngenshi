@@ -1,10 +1,13 @@
-var express = require('express');
-var router = express.Router();
+import express from 'express';
 
-var v1 = {
-  genshijin : require('../api/v1/genshijin')
-}
+import genshijin from '../api/v1/genshijin.js';
+
+const router = express.Router();
+
+const v1 = {
+  genshijin
+};
 
 router.post('/v1/genshijin', v1.genshijin.post);
 
-module.exports = router;
+export default router;

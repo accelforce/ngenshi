@@ -1,8 +1,13 @@
-var genshijin = require('../../lib/genshijin');
+import genshijin from '../../lib/genshijin.js';
 
-module.exports = {
-  post : function(req, res) {
-    genshijin(decodeURIComponent(req.query.status), req.query.domain, req.query.access_token);
-    res.send("Execution started.");
+export default {
+  post: (req, res, next) => {
+    genshijin(decodeURIComponent(req.query.status), req.query.domain, req.query.access_token)
+        .then(() => {
+          res.send("done.")
+        })
+        .catch((err) => {
+          next(err);
+        });
   }
-}
+};
